@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://www.google.com/imgres?q=indiflo%20pvt%20ltd&imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD563DAQHpcdV6M84MJw%2Fimage-scale_191_1128%2FB56ZxH5dYXHYAc-%2F0%2F1770732772743%2Findiflo_private_limited_cover%3Fe%3D2147483647%26v%3Dbeta%26t%3DRDSfprmTlM5DtRIb5DgcJgEoPV8KqG8WJjyaZn9eoAM&imgrefurl=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Findiflo&docid=7QiUrVAzAcIpVM&tbnid=ExdI73LMCtsi7M&vet=12ahUKEwjWo6KijZOVAxXWRmwGHcUYB20QnPAOegQIFxAB..i&w=1128&h=191&hcb=2&ved=2ahUKEwjWo6KijZOVAxXWRmwGHcUYB20QnPAOegQIFxAB" alt="QGroundControl Logo" width="500">
+  <img src="https://www.google.com/imgres?q=indiflo%20pvt%20ltd&imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD563DAQHpcdV6M84MJw%2Fimage-scale_191_1128%2FB56ZxH5dYXHYAc-%2F0%2F1770732772743%2Findiflo_private_limited_cover%3Fe%3D2147483647%26v%3Dbeta%26t%3DRDSfprmTlM5DtRIb5DgcJgEoPV8KqG8WJjyaZn9eoAM&imgrefurl=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Findiflo&docid=7QiUrVAzAcIpVM&tbnid=ExdI73LMCtsi7M&vet=12ahUKEwjWo6KijZOVAxXWRmwGHcUYB20QnPAOegQIFxAB..i&w=1128&h=191&hcb=2&ved=2ahUKEwjWo6KijZOVAxXWRmwGHcUYB20QnPAOegQIFxAB" alt="IndiFloGroundControl Logo" width="500">
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@
 
 ### 💻 *Get Involved!*
 
-QGroundControl is *open-source*, meaning you have the power to shape it! Whether you're fixing bugs, adding features, or customizing for your specific needs, QGC welcomes contributions from the community.
+It is *open-source*, meaning you have the power to shape it! Whether you're fixing bugs, adding features, or customizing for your specific needs, QGC welcomes contributions from the community.
 
 🛠️ Start building today with our [Developer Guide](https://dev.qgroundcontrol.com/en/) and [build instructions](https://dev.qgroundcontrol.com/en/getting_started/).
 
