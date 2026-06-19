@@ -261,4 +261,21 @@ Map {
             }
         }
     }
+ Text {
+    text: "INDIFLO GCS"
+
+    anchors.centerIn: parent
+
+    font.pixelSize: 60
+    font.bold: true
+
+    color: "#FFFFFF"
+
+    opacity: 0.08
+
+    rotation: -30
+
+    z: 9999
+}
+ 
 } // Map

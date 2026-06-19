@@ -15,8 +15,9 @@ import QGroundControl.Toolbar
 /// @brief Native QML top level window
 /// All properties defined here are visible to all QML pages.
 ApplicationWindow {
-    id:         mainWindow
-    visible:    true
+    visible: true
+   id:         mainWindow
+  
     // The special casing for android prevents white bars from showing up on the edges of the screen with newer android versions
     flags:      Qt.Window | (ScreenTools.isAndroid ? Qt.ExpandedClientAreaHint | Qt.NoTitleBarBackgroundHint : 0)
 

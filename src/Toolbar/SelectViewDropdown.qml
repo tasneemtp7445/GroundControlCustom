@@ -11,16 +11,14 @@ ToolIndicatorPage {
     property real _toolButtonHeight: ScreenTools.defaultFontPixelHeight * 3
 
     contentComponent: Component {
-        GridLayout {
-            columns: 2
-            columnSpacing: ScreenTools.defaultFontPixelWidth
-            rowSpacing: columnSpacing
+        RowLayout {
+            spacing: ScreenTools.defaultFontPixelWidth
 
             SubMenuButton {
                 objectName: "toolbar_viewFly"
                 implicitHeight: root._toolButtonHeight
-                Layout.fillWidth: true
-                text: qsTr("Fly")
+
+                text: qsTr("Launch")
                 imageResource: "/res/FlyingPaperPlane.svg"
                 onClicked: {
                     if (mainWindow.allowViewSwitch()) {
@@ -33,7 +31,7 @@ ToolIndicatorPage {
             SubMenuButton {
                 objectName: "toolbar_viewPlan"
                 implicitHeight: root._toolButtonHeight
-                Layout.fillWidth: true
+
                 text: qsTr("Plan")
                 imageResource: "/qmlimages/Plan.svg"
                 onClicked: {
@@ -45,10 +43,10 @@ ToolIndicatorPage {
             }
 
             SubMenuButton {
-                objectName: "toolbar_viewAnalyze"
+                objectName: "toolbar_viewInspect"
                 implicitHeight: root._toolButtonHeight
-                Layout.fillWidth: true
-                text: qsTr("Analyze")
+
+                text: qsTr("Inspect")
                 imageResource: "/qmlimages/Analyze.svg"
                 visible: QGroundControl.corePlugin.showAdvancedUI
                 onClicked: {
@@ -63,7 +61,7 @@ ToolIndicatorPage {
                 id: setupButton
                 objectName: "toolbar_viewConfigure"
                 implicitHeight: root._toolButtonHeight
-                Layout.fillWidth: true
+
                 text: qsTr("Configure")
                 imageResource: "/res/GearWithPaperPlane.svg"
                 onClicked: {
@@ -78,7 +76,7 @@ ToolIndicatorPage {
                 id: settingsButton
                 objectName: "toolbar_viewSettings"
                 implicitHeight: root._toolButtonHeight
-                Layout.fillWidth: true
+
                 text: qsTr("Settings")
                 imageResource: "/res/QGCLogoWhite.svg"
                 visible: !QGroundControl.corePlugin.options.combineSettingsAndSetup
@@ -94,12 +92,25 @@ ToolIndicatorPage {
                 id: closeButton
                 objectName: "toolbar_viewClose"
                 implicitHeight: root._toolButtonHeight
-                Layout.fillWidth: true
+
                 text: qsTr("Close")
                 imageResource: "/res/OpenDoor.svg"
                 onClicked: {
                     if (mainWindow.allowViewSwitch()) {
                         mainWindow.finishCloseProcess()
+                    }
+                }
+            }
+            SubMenuButton {
+                id: infoButton
+                objectName: "toolbar_info"
+                implicitHeight: root._toolButtonHeight
+
+                text: qsTr("Info")
+                imageResource: "/res/OpenDoor.svg"
+                onClicked: {
+                    if (mainWindow.allowViewSwitch()) {
+                        indifloInfoDialog.open()
                     }
                 }
             }
@@ -140,18 +151,18 @@ ToolIndicatorPage {
                         anchors.fill: parent
 
                         onClicked: (mouse) => {
-                            if (mouse.modifiers & Qt.ControlModifier) {
-                                QGroundControl.corePlugin.showTouchAreas = !QGroundControl.corePlugin.showTouchAreas
-                                showTouchAreasNotification.open()
-                            } else if (ScreenTools.isMobile || mouse.modifiers & Qt.ShiftModifier) {
-                                mainWindow.closeIndicatorDrawer()
-                                if (!QGroundControl.corePlugin.showAdvancedUI) {
-                                    advancedModeOnConfirmation.open()
-                                } else {
-                                    advancedModeOffConfirmation.open()
-                                }
-                            }
-                        }
+                                       if (mouse.modifiers & Qt.ControlModifier) {
+                                           QGroundControl.corePlugin.showTouchAreas = !QGroundControl.corePlugin.showTouchAreas
+                                           showTouchAreasNotification.open()
+                                       } else if (ScreenTools.isMobile || mouse.modifiers & Qt.ShiftModifier) {
+                                           mainWindow.closeIndicatorDrawer()
+                                           if (!QGroundControl.corePlugin.showAdvancedUI) {
+                                               advancedModeOnConfirmation.open()
+                                           } else {
+                                               advancedModeOffConfirmation.open()
+                                           }
+                                       }
+                                   }
 
                         // This allows you to change this on mobile
                         onPressAndHold: {
@@ -160,7 +171,44 @@ ToolIndicatorPage {
                         }
                     }
                 }
+
+            }
+            QGCPopupDialog {
+                id: indifloInfoDialog
+
+                title: qsTr("About IndiFlo")
+
+                ColumnLayout {
+
+                    spacing: 10
+
+                    QGCLabel {
+                        text: qsTr("IndiFlo Ground Control Station")
+                        font.pointSize: ScreenTools.defaultFontPointSize
+                    }
+
+                    QGCLabel {
+                        text: qsTr("Company: IndiFlo Private Limited")
+                    }
+
+                    QGCLabel {
+                        text: qsTr("Application: IndiFlo Ground Control")
+                    }
+
+                    QGCLabel {
+                        text: qsTr("Version:1.0 ") + QGroundControl.qgcVersion
+                    }
+
+                    QGCLabel {
+                        text: qsTr("Developed for UAV Operations")
+                    }
+
+                    QGCLabel {
+                        text: qsTr("Contact: support@indiflo.com")
+                    }
+                }
             }
         }
     }
+
 }

@@ -30,7 +30,10 @@ Rectangle {
                 text:               "<a href=\"https://docs.qgroundcontrol.com\">https://docs.qgroundcontrol.com</a>"
                 onLinkActivated:    (link) => Qt.openUrlExternally(link)
             }
-
+            QGCLabel {
+    text: "<a href=\"https://www.indiflo.com\">Visit IndiFlow Website</a>"
+    onLinkActivated: (link) => Qt.openUrlExternally(link)
+}
             QGCLabel { text: qsTr("PX4 Users Discussion Forum") }
             QGCLabel {
                 linkColor:          qgcPal.text
