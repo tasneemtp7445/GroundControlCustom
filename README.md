@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dronecode/UX-Design/35d8148a8a0559cd4bcf50bfa2c94614983cce91/QGC/Branding/Deliverables/QGC_RGB_Logo_Horizontal_Positive_PREFERRED/QGC_RGB_Logo_Horizontal_Positive_PREFERRED.svg" alt="QGroundControl Logo" width="500">
+  <img src="https://www.google.com/imgres?q=indiflo%20pvt%20ltd&imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD563DAQHpcdV6M84MJw%2Fimage-scale_191_1128%2FB56ZxH5dYXHYAc-%2F0%2F1770732772743%2Findiflo_private_limited_cover%3Fe%3D2147483647%26v%3Dbeta%26t%3DRDSfprmTlM5DtRIb5DgcJgEoPV8KqG8WJjyaZn9eoAM&imgrefurl=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Findiflo&docid=7QiUrVAzAcIpVM&tbnid=ExdI73LMCtsi7M&vet=12ahUKEwjWo6KijZOVAxXWRmwGHcUYB20QnPAOegQIFxAB..i&w=1128&h=191&hcb=2&ved=2ahUKEwjWo6KijZOVAxXWRmwGHcUYB20QnPAOegQIFxAB" alt="QGroundControl Logo" width="500">
 </p>
 
 <p align="center">
@@ -9,11 +9,11 @@
   </a>
 </p>
 
-*QGroundControl* (QGC) is a highly intuitive and powerful Ground Control Station (GCS) designed for UAVs. Whether you're a first-time pilot or an experienced professional, QGC provides a seamless user experience for flight control and mission planning, making it the go-to solution for any *MAVLink-enabled drone*.
+*QGroundControl* It is a highly intuitive and powerful Ground Control Station (GCS) designed for UAVs. Whether you're a first-time pilot or an experienced professional, QGC provides a seamless user experience for flight control and mission planning, making it the go-to solution for any *MAVLink-enabled drone*.
 
 ---
 
-### 🌟 *Why Choose QGroundControl?*
+### 🌟 *Why Choose IndiFloGroundControl?*
 
 - *🚀 Ease of Use*: A beginner-friendly interface designed for smooth operation without sacrificing advanced features for pros.
 - *✈️ Comprehensive Flight Control*: Full flight control and mission management for *PX4* and *ArduPilot* powered UAVs.
